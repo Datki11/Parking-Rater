@@ -7,17 +7,20 @@
   </head>
 
   <body>
+	<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase-firestore.js"></script>
+	<script src='firebaseinit.js'></script>
     <link rel="stylesheet" href="style.css">
     <h1 class="tiger-parking">Tiger Parking</h1>
-    <form action="">
+    <form action="submit" id="signup-attempt">
       <h2 class="h2">Sign Up</h2>
       <div class="container">
         <div class="signup-container">
           <div class="signup-email">
-            <input id="input-email" placeholder="Email" type="text" />
+            <input id="input-email" name="email" placeholder="Email" type="text" />
           </div>
           <div class="signup-password">
-            <input id="input-passwrod" placeholder="Password" type="text" />
+            <input id="input-password" placeholder="Password" type="text" />
             <input id="password-repeat" placeholder="Confirm Password" type="text" />
           </div>
           <button class="button button--primary button--small button--solid" id="account-submission">Submit</button>
@@ -28,6 +31,7 @@
         <button class="button button--primary button--small button--solid" id="cancel-link" href="login.html">Cancel</button>
       </div>
     </form>
+	<script src="signup.js"></script>
   </body>
 
 </html>
