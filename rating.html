@@ -13,16 +13,19 @@
 	
 	
 	<form id="rating-submit">
+		<h3>Pick your Lot</h3>
 		<input type="radio" name="lot" value="Patrick Taylor Lot"> Patrick Taylor Lot<br>
 		<input type="radio" name="lot" value="Business Lot"> Business Lot<br>
 		<input type="radio" name="lot" value="Public Safety Lot"> Public Safety Lot<br>
+		<input type="radio" name="lot" value="Nicholson"> Nicholson<br>
 		<br>
+		<h3>Rate how full the lot is</h3>
+		<input type="radio" name="score" value="1" checked> 1-Mostly to completely empty.<br>
+		<input type="radio" name="score" value="2" checked> 2-Less than half full, but more than empty.<br>
+		<input type="radio" name="score" value="3" checked> 3-Half full, or half empty depending on your point of view.<br>
+		<input type="radio" name="score" value="4" checked> 4-More than half full, but not completely full.<br>
+		<input type="radio" name="score" value="5" checked> 5-I took the last empty spot. HA!<br>
 		<br>
-		<input type="radio" name="score" value="1" checked> 1<br>
-		<input type="radio" name="score" value="2" checked> 2<br>
-		<input type="radio" name="score" value="3" checked> 3<br>
-		<input type="radio" name="score" value="4" checked> 4<br>
-		<input type="radio" name="score" value="5" checked> 5<br>
 		<button>Add Rating</button>
 	</form>
 	<script src="rating.js"></script>
