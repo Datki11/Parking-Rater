@@ -124,8 +124,9 @@ function averageRating(lot);
 			{
 				let doc = snapshot.docs[i];
 				let data = doc.data();
-				let timeDif = howLongAgo(data.time.toDate());
-				if (timeDif<1)
+				let timeDif = new Date().getTime() - time.getTime();
+				timeDif = timeDif/3600000;
+				if (timeDif<=1)
 				{
 					average += data.score;
 					total++;
